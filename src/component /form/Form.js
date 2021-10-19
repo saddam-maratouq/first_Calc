@@ -1,6 +1,8 @@
 import React, { Component } from 'react'  
 
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button' 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
@@ -18,13 +20,12 @@ export class Form extends Component {
 
                 <div className='calc-c' >
 
-                <Button variant="primary" size="lg" onClick={this.props.Incresre} > +   </Button>  {' '} 
+                <Button variant="primary"  onClick={this.props.Incresre} > +   </Button>  {' '}  
+                <Button variant="primary"  onClick={this.props.Decrese} > -   </Button>  {' '} 
+                <Button variant="primary"  onClick={this.props.Multiplication }> * </Button>  {' '} 
+                <Button variant="primary"  onClick={this.props.Division } >/  </Button>  {' '} 
+                <Button variant="primary"  onClick={this.props.Diacritic } > ^ </Button>  {' '} 
 
-                <Button variant="primary" size="lg" onClick={this.props.Decrese} > -   </Button>  {' '}
-
-                <Button variant="primary" size="lg" onClick={this.props.Multiplication }> * </Button>  {' '} 
-
-                <Button variant="primary" size="lg" onClick={this.props.Division } > /  </Button>  {' '}
 
                 </div>
 

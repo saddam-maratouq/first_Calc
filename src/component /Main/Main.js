@@ -1,5 +1,6 @@
 import React, { Component } from 'react' 
-import Form from '../form/Form'
+import Form from '../form/Form' 
+
 
 
 
@@ -85,20 +86,34 @@ import './Main.styles.css'
             Num1 : '',
             Num2 :  '', 
         })
-    }
+    } 
+
+    Diacritic    = (e) => {
+
+        e.preventDefault()
+        this.setState({
+            total :   Number(this.state.Num1)**Number(this.state.Num2) ,
+            Num1 : '',
+            Num2 :  '', 
+        })
+    } 
+
+
+
 
     
     render() { 
 
 
         return (
-            <div> 
+            <div className='form'> 
                     <Form
                     state={this.state}
                     handelChangeNumOne={this.handelChangeNumOne} 
                     handelChangeNumTwo={this.handelChangeNumTwo}
                     Division={this.Division} 
                     Multiplication={this.Multiplication} 
+                    Diacritic={this.Diacritic}
                     Decrese={this.Decrese}
                     Incresre={this.Incresre}
                     />

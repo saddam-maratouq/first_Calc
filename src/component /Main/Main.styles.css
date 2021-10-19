@@ -1,5 +1,12 @@
 .calc-c {
     font-size: 30px; 
     position: relative;
-    left: 94px;
+    left: 77px;
+    top: 5px;
+} 
+
+.form {
+
+    position: relative; 
+    top: 40px;
 }
